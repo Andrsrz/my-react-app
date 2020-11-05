@@ -22,10 +22,18 @@ const elementWithoutName = getGreeting();
 
 /* Attributes with JSX */
 const url='https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png';
-const image = <img src={url}></img>;
+const alt='This is a pokemon';
+const image = <img src={url} alt={alt}></img>;
 
 function App() {
-  return (image);
+  return (
+	/* Childrens */
+	<div>
+	  {elementWithoutName}
+	  {element}
+	  {image}
+	</div>
+  );
 }
 
 export default App;
