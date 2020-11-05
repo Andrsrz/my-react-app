@@ -9,6 +9,7 @@ const user = {
   lastName: 'Ruiz'
 };
 
+/* JSX */
 function getGreeting(user){
   if(user)
     return <h1>Hello, {formatName(user)}</h1>
@@ -19,8 +20,12 @@ function getGreeting(user){
 const element = getGreeting(user);
 const elementWithoutName = getGreeting();
 
+/* Attributes with JSX */
+const url='https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png';
+const image = <img src={url}></img>;
+
 function App() {
-  return (element);
+  return (image);
 }
 
 export default App;
