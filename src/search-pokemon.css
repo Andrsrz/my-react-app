@@ -1,0 +1,17 @@
+#title {
+	text-align: center;
+}
+
+#search-pokemon > form {
+	display: flex;
+	justify-content: center;
+}
+
+#pokemon {
+	text-align: center;
+}
+
+#images-container {
+	width: max-content;
+	margin: auto;
+}
