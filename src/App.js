@@ -1,3 +1,5 @@
+import Clock from './Clock';
+
 function formatName(user){
   return user.firstName + ' ' + user.lastName;
 }
@@ -27,6 +29,7 @@ function App() {
   return (
 	/* Childrens */
 	<div id='app'>
+	  <Clock />
 	  {elementWithoutName}
 	  {element}
 	  {image}
