@@ -1,5 +1,3 @@
-import './App.css';
-
 function formatName(user){
   return user.firstName + ' ' + user.lastName;
 }
@@ -28,7 +26,7 @@ const image = <img src={url} alt={alt}></img>;
 function App() {
   return (
 	/* Childrens */
-	<div>
+	<div id='app'>
 	  {elementWithoutName}
 	  {element}
 	  {image}
